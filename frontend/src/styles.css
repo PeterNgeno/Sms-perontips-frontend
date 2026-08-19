@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  color: #17202a;
+}
+
+.app {
+  width: 100%;
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 20px;
+}
+
+
+/* HEADER */
+
+.header {
+  background: white;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.header p {
+  margin: 5px 0 0;
+  color: #6b7280;
+}
+
+
+/* NAVIGATION */
+
+.navigation {
+  display: flex;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.navigation button {
+  border: none;
+  background: #e7eaee;
+  padding: 11px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.navigation button.active {
+  background: #111827;
+  color: white;
+}
+
+
+/* CARD */
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.subscribe-card,
+.admin-login {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+
+/* FORM */
+
+label {
+  display: block;
+  font-weight: 700;
+  margin-top: 18px;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-top: 7px;
+  padding: 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 170px;
+  resize: vertical;
+}
+
+
+/* CONSENT */
+
+.consent {
+  display: flex;
+  gap: 9px;
+  align-items: flex-start;
+  font-weight: 500;
+}
+
+.consent input {
+  width: auto;
+  margin-top: 3px;
+}
+
+
+/* BUTTON */
+
+.primary {
+  margin-top: 20px;
+  padding: 13px 22px;
+  border: none;
+  border-radius: 10px;
+  background: #111827;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* ADMIN */
+
+.admin {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.statistics {
+  display: flex;
+  gap: 30px;
+  margin-top: 25px;
+}
+
+.statistics div {
+  display: flex;
+  flex-direction: column;
+}
+
+.statistics strong {
+  font-size: 30px;
+}
+
+.statistics span {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+
+/* SMS */
+
+.sms-bottom {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.small {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+
+/* MESSAGES */
+
+.message,
+.error {
+  margin-top: 15px;
+  padding: 13px;
+  border-radius: 10px;
+  background: #eef7ee;
+}
+
+.error {
+  background: #fff0f0;
+  color: #a00000;
+}
+
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  color: #6b7280;
+  font-size: 12px;
+  padding: 40px 10px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .app {
+    padding: 12px;
+  }
+
+  .admin {
+    grid-template-columns: 1fr;
+  }
+
+  .statistics {
+    gap: 20px;
+  }
+
+}
